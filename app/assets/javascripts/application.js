@@ -22,7 +22,7 @@ $(function(){
   });
 
  
-  $.getJSON("https://api.instagram.com/v1/media/popular?access_token=ACCESS-TOKEN", function(response, status, jqXHR){
+  $.getJSON("https://api.instagram.com/v1/media/popular?access_token=8240865.1fb234f.a791d5203eda498586fb802a698d3c02", function(response, status, jqXHR){
       $('.pane').eq(2).find('p').eq(0).html(jqXHR.responseText);
       console.log(response);
       console.log(status);
