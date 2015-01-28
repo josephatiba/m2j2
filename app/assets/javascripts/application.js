@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function(){
+
+  $('#btn').click(function(){
+    $("#panel").slideToggle("slow");
+  });
+
+ 
+  $.getJSON("https://api.instagram.com/v1/media/popular?access_token=ACCESS-TOKEN", function(response, status, jqXHR){
+      $('.pane').eq(2).find('p').eq(0).html(jqXHR.responseText);
+      console.log(response);
+      console.log(status);
+      console.log(jqXHR); 
+  });
+
+});

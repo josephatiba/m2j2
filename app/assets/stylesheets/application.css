@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+#panel
+ {
+  position: absolute;
+  background: blue;
+  height: 306px;
+  width: 306px;
+}
